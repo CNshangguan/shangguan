@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xdkj.dao.EmpDao" >
+
+
+    <select id="findAll" resultType="com.xdkj.bean.Emp">
+        select * from EMP;
+    </select>
+
+    <delete id="delete">
+        delete form EMP where empno = #{empno};
+    </delete>
+
+    <insert id="add">
+        insert into EMP(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) value (#{empno},#{ename},#{job},#{mgr},#{hiredate},#{sal},#{comm},#{deptno});
+    </insert>
+
+    <update id="update">
+        update EMP set ENAME=#{ename},JOB=#{job},MGR=#{mgr},HIREDATE=#{hiredate},SAL=#{sal},COMM=#{comm},DEPTNO=#{deptno} where EMPNO=#{empno}
+    </update>
+
+</mapper>

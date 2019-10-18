@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="emp1" class="com.xdkj.bean.Emp" name="emp">
+        <property name="comm" value="500.00"/>
+        <property name="deptno" value="10"/>
+        <property name="empno" value="1001"/>
+        <property name="ename" value="zhangsan"/>
+        <property name="hireDate" value="1997-03-07 00:00:00"/>
+        <property name="job" value="jobs"/>
+        <property name="mgr" value="7092"/>
+        <property name="sal" value="3000.00"/>
+    </bean>
+
+
+</beans>
